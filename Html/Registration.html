@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Employee Registration</title>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <link rel="icon" href="../Assert/icon1.png" type="image/x-icon">
+        <link rel="stylesheet" href="../Css/Registration.css">
+        <script src="../Js/Register.js"></script>
+    </head>
+    <body>
+        <div class="navbar">
+            <img src = "../Assert/icon1.png" alt="logo">
+            <a class="navbar-brand" href="http://127.0.0.1:5500/Html/Dashboard.html">
+                <span>EMPLOYEE</span><br><span style="color: rgb(56, 56, 56);">PAYROLL</span></a> 
+        </div>
+
+        <div class="box">
+            <!-- <form class="form" id="registrationform"></form> -->
+            <div class="flexbox">
+                <span id="Emptxt">Employee Payroll form</span>
+            </div>
+
+            <div class="flexbox">
+                <label class="left-label" for="name">Name:</label>
+                <input type="text" id="fullname" name="fullname" pattern="[A-Za-z]{3,50}">
+            </div>
+
+            <div class="flexbox">
+                <label class="left-label" for="profileImage">Profile image:</label>
+                <input class="radio" type="radio" id="profileImg1" name="profileImg" value="../Assert/profileImg1.png">
+                <img src="../Assert/profileImg1.png" class="profileimage">
+                <input class="radio" type="radio" id="profileImg2" name="profileImg" value="../Assert/profileImg2.png">
+                <img src="../Assert/profileImg2.png" class="profileimage">
+                <input class="radio" type="radio" id="profileImg3" name="profileImg" value="../Assert/profileImg3.png">
+                <img src="../Assert/profileImg3.png" class="profileimage">
+                <input class="radio" type="radio" id="profileImg4" name="profileImg" value="../Assert/profileImg4.png">
+                <img src="../Assert/profileImg4.png" class="profileimage">
+            </div>
+
+            <div class="flexbox">
+                <label class="left-label">Gender:</label>
+                <input type="radio" id="male" name="gender" value="m">
+                <label class="right-label" for="male">Male</label>
+                <input type="radio" id="female" name="gender" value="f">
+                <label class="right-label" for="female">Female</label>                
+            </div>
+
+            <div class="flexbox">
+                <label class="left-label">Department:</label>
+                <input type="checkbox" id="HR" name="department" value="HR"><label class="right-label">HR</label>
+                <input type="checkbox" id="Sales" name="department" value="Sales"><label class="right-label">Sales</label>
+                <input type="checkbox" id="Finance" name="department" value="Finance"><label class="right-label">Finance</label>
+                <input type="checkbox" id="Engineer" name="department" value="Engineer"><label class="right-label">Engineer</label>
+                <input type="checkbox" id="Others" name="department" value="Others"><label class="right-label">Others</label>
+            </div>
+
+            <div class="flexbox">
+                <label class="left-label" for="salary">Salary:</label>
+                <select name="salary" id="salary">
+                    <option value=0>Select Salary</option>
+                </select>
+            </div>
+
+            <div class="flexbox">
+                <label class="left-label" for="start date">Start date:</label>
+                <select id="start-date-day" name="day" id="day">
+                    <option value="0">Day</option>
+                </select>
+                <select id="start-date-month" name="month" id="month">
+                    <option value="0">Month</option>
+                </select>
+                <select id="start-date-year" name="year" id="year">
+                    <option value="0">Year</option>
+                </select>
+            </div>
+
+            <div class="flexbox">
+                <label class="left-label" for="Notes">Notes:</label>
+                <textarea id="notes" name="notes" rows="3" cols="30"></textarea>
+            </div>
+
+            <div class="flexbox">
+                <input class="btn" id="cancel" type="button" name="cancel" value="cancel">
+                <input class="btn" type="submit" id="submit-form">
+                <input class="btn" id="reset" onclick="resetFields()" type="reset">
+            </div>
+        </div>
+    </body>
+</html>
