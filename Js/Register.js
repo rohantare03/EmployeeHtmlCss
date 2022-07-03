@@ -28,7 +28,7 @@ function AddDateField() {
         option.value = i;
         x.add(option);
     }
- var x = document.getElementById("start-date-day")
+     var x = document.getElementById("start-date-day")
     for(i =1 ; i <= 31; i++)
     {
         var option = document.createElement("option");
